@@ -4,9 +4,22 @@ greet(){console.log('hi');}
 
 }
 
-class Devs extends Person {}
+class Devs extends Person {
+
+//lets override
+
+greet(){console.log('hi222');}
+
+groot(){
+var w = this.greet();   will call greet from this class
+vaw r = super.greet(); will call greet from parent class
+
+}
+}
 
 
 var iProgramer = new Dev();
 
 iProgramer.greet();
+
+
