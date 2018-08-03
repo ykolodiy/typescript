@@ -1,0 +1,16 @@
+class Person {
+a;
+b;
+function c(){};
+
+}
+
+Class BB extends Pearson {
+function c(){console.log('sdsdsdsds')};
+function d(){console.log('sdsdsdsds')};
+}
+
+
+var iP: Pearson = new BB();
+I can only get a or b or func c
+but result of func c will be from BB
