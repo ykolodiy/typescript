@@ -1,0 +1,12 @@
+class Person {
+fn:string;
+greet(){console.log('hi');}
+
+}
+
+class Devs extends Person {}
+
+
+var iProgramer = new Dev();
+
+iProgramer.greet();
