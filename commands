@@ -1,0 +1,72 @@
+tcs file.ts > file.js
+
+
+function greet () :string {
+return "hello";
+}
+
+var greeting;
+var greeting = greet();
+
+
+var a;
+a = 10;   here a has type any
+you can do a = true;
+
+var a = 10; here a has type number;
+
+___
+
+function add (a, b?, c: number, d: number = 0): number {return a+b+c+d;}
+___
+
+tuple
+var arr: [number, boolean];
+arr = [1,true];
+
+___
+
+union type one or another type can be
+var a: number | boolean;   
+
+__ 
+class AA {
+a;
+b;
+}
+//implicit type AA declaration
+var ia = new AA ();
+ia.a = "sdsds";
+//works withouts implicit the same
+var ia: AA = new AA ();
+ia.a = "sdsds";
+// you can set type of var
+class AA {
+a:string;
+b:string;
+}
+//implicit type AA declaration
+var ia = new AA ();
+ia.a = "sdsds";
+___
+
+//function
+
+class AA {
+a;
+b;
+
+constructor(a:string, b:string){
+this.a=a;
+this.b=b;
+}
+
+function XX (){return this.a+this.b;}
+}
+//implicit type AA declaration
+var ia = new AA ();
+ia.a = "sdsds";
+ia.b = "dsdsdsdsdsds";
+
+log(a.XX);
+
