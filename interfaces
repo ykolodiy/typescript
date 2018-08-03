@@ -1,0 +1,23 @@
+interface Pearson () {
+a:string;
+b:string;
+getname():string;     method just return string
+
+}
+
+
+clas FFF implements Pearson {
+a:string;
+b:string;
+getname():string {return a+B;}
+
+}
+
+let haha:PEarson = new  FFF();
+
+let obj = {
+a:"sdsds";
+b:"dfdfdf";
+getname: ()=>"a+b"; 
+
+}
